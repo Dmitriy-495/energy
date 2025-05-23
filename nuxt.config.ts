@@ -7,11 +7,7 @@ export default defineNuxtConfig({
   srcDir: 'src/',
 
   modules: [
-    '@nuxt/content',
-    '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxt/ui'
   ],
 })
