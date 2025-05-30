@@ -12,6 +12,7 @@ useHead({
 
 <template>
   <div>
+    Verification: 06e1603e38cb751a
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
