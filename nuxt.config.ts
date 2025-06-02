@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   
   ssr:true,
 
@@ -29,6 +29,11 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/icon',
     '@nuxt/image',
-    '@nuxt/ui'
-  ]
+    '@nuxt/ui',
+    '@pinia/nuxt',
+    'nuxt-gtag',
+  ],
+  gtag: {
+    id: 'G-RYBCF1CRFC'
+  }
 })
