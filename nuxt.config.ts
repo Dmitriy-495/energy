@@ -34,6 +34,6 @@ export default defineNuxtConfig({
     'nuxt-gtag',
   ],
   gtag: {
-    id: 'G-RYBCF1CRFC'
+    id: 'G-1BGPNWZ4TC'
   }
 })
