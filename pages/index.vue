@@ -1,6 +1,7 @@
 <!-- pages/index.vue -->
 <template>
   <div>
+    <AppHeader />
     <section id="services" class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <h2
@@ -247,6 +248,7 @@
         </div>
       </div>
     </section>
+    <AppFooter />
   </div>
 </template>
 
@@ -267,6 +269,7 @@ const submitForm = () => {
 // Это можно сделать в клиентском плагине, чтобы избежать проблем с SSR
 // Для примера, оставим здесь, но лучше вынести в plugin
 import { onMounted } from "vue";
+import AppHeader from "~/components/AppHeader.vue";
 
 onMounted(() => {
   const observerOptions = {
