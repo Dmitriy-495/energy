@@ -29,13 +29,26 @@ export default defineNuxtConfig({
     aliases: {
       energy: "heroicons:bolt-solid",
       cog: "heroicons:cog-6-tooth-solid",
-      fire: "heroicons:fire-solid",
-      puzzle: "heroicons:puzzle-piece-solid",
-      plane: "heroicons:paper-airplane-solid",
+      scale: "heroicons:scale-solid",
+      build: "heroicons:building-office-solid",
+      computer: "heroicons:computer-desktop-solid",
       bars: "heroicons:bars-3-solid",
       xMark: "heroicons:x-mark-solid",
       globe: "heroicons:globe-alt-solid",
       phone: "heroicons:phone-solid",
+      wrench: "heroicons:wrench-screwdriver-16-solid",
+      pencil: "heroicons:pencil-square-solid",
+      check: "heroicons:check-circle-16-solid",
+    },
+  },
+
+  content: {
+    build: {
+      markdown: {
+        toc: {
+          depth: 3, // include h3 headings
+        },
+      },
     },
   },
 

@@ -7,14 +7,8 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink
-    to="/"
-    class="flex items-center gap-x-1 font-black sm:gap-x-2"
-  >
-    <Icon
-      name="heroicons:bolt-solid"
-      :class="`-rotate-16 text-orange-400 ${iconClasses}`"
-    />
+  <NuxtLink to="/" class="flex items-center gap-x-1 font-black sm:gap-x-2">
+    <Icon name="energy" :class="`-rotate-16 text-orange-400 ${iconClasses}`" />
     <p class="flex flex-col whitespace-nowrap">
       <span
         :class="`leading-none tracking-wide uppercase ${primaryTextClasses}`"

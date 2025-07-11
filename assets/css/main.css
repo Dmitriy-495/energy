@@ -6,7 +6,7 @@
 
 @utility container {
   padding-inline: 0.75rem;
-  margin-inline: 10;
+  margin-inline: 1.5;
 
   @variant sm {
     padding-inline: 2rem;

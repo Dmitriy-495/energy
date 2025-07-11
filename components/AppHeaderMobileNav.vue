@@ -1,35 +1,32 @@
+<script setup lang="ts">
+const navItems = [
+  { name: "Главная", href: "/" },
+  { name: "Услуги", href: "/about" },
+  { name: "Новости", href: "/news" },
+  { name: "Статьи", href: "/articles" },
+];
+</script>
+
 <template>
-  <div id="mobileMenu" class="mt-4 hidden pb-4 md:hidden">
-    <ul class="space-y-2">
-      <li>
-        <a href="#" class="block py-2 text-gray-700 hover:text-orange-500"
-          >Главная</a
-        >
-      </li>
-      <li>
-        <a
-          href="#services"
-          class="block py-2 text-gray-700 hover:text-orange-500"
-          >Услуги</a
-        >
-      </li>
-      <li>
-        <a href="#" class="block py-2 text-gray-700 hover:text-orange-500"
-          >О нас</a
-        >
-      </li>
-      <li>
-        <a href="#news" class="block py-2 text-gray-700 hover:text-orange-500"
-          >Новости</a
-        >
-      </li>
-      <li>
-        <a
-          href="#contact"
-          class="block py-2 text-gray-700 hover:text-orange-500"
-          >Контакты</a
-        >
-      </li>
-    </ul>
+  <div class="flex lg:hidden">
+    <nav
+      id="nav"
+      class="peer absolute inset-x-0 top-full hidden border-b border-slate-200 bg-white target:block"
+    >
+      <ul class="flex flex-col items-center px-3 pb-3">
+        <li v-for="item in navItems" key="item.href" class="w-full">
+          <NuxtLink
+            :to="item.href"
+            class="inline-block w-full rounded-md py-2 text-center font-semibold hover:bg-orange-400"
+            >{{ item.name }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
+    <AppHeaderMobileNavButton
+      a="#nav"
+      class="peer-target:hidden peer-target:[&+a]:block"
+    />
+    <AppHeaderMobileNavButton a="#" icon="xMark" class="hidden" />
   </div>
 </template>
